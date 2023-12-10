@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+h2 {
+  font-family: "Arvo", serif;
+  color: #f5bc00;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+h1 {
+  font-family: "Lato", sans-serif;
+  color: #8390fa;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+p {
+  font-family: "Lato", sans-serif;
+  color: #959595;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px 0px;
+}
+.container {
+  position: relative;
+  display: flex;
+}
+nav {
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  filter: drop-shadow(0px 10px 4px #00000050);
+}
+nav img {
+  position: absolute;
+  top: 15%;
+  height: 60%;
+  left: 10%;
+}
+nav ul {
+  position: relative;
+  right: 5%;
+}
+nav a {
+  font-family: "Lato", sans-serif;
+  color: #8390fa;
+  font-size: 20px;
+  font-weight: medium;
+  padding: 20px;
+}
+nav a:hover {
+  color: #111954;
+  transition: 0.5s;
+}
+#kopContainer {
+  width: 100%;
+  flex-direction: column;
+  background-color: #414066;
+  overflow: hidden;
+}
+#homeBG {
+  position: absolute;
+  min-width: 100%;
+  min-height: 600px;
+  opacity: 30%;
+  top: -15vw;
+}
+#logoHome {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 30px;
+  left: 10%;
+}
+#kopContainerText {
+  width: 800px;
+  flex-direction: column;
+  left: 10%;
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+#diensten {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#kopDiensten {
+  margin-top: 70px;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.containerDienst {
+  display: flex;
+  width: 100%;
+  background-color: #f7f7f7;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.dienstTextBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+  padding: 2% 7%;
+}
+.imgBoxDienst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+  padding: 0% 7%;
+}
+#hand {
+  height: 380px;
+}
+.imgBoxDienst img {
+  height: 300px;
+}
+#waaromJuradex {
+  width: 100%;
+  flex-direction: column;
+}
+
+#waaromJuradexKop {
+  width: 50%;
+  left: 25%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#waaromJuradex h1 {
+  font-size: 26px;
+  margin-top: 30px;
+}
+#waaromJuradex p {
+  padding: 0px 0px;
+}
+#contactBox {
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  margin-top: 0px;
+  flex-wrap: wrap;
+  background-color: #1e2138;
+}
+#contactText {
+  position: relative;
+  flex-direction: column;
+  width: 700px;
+  padding: 0% 7%;
+  margin: 50px 0px;
+}
+#contactText2 {
+  position: relative;
+  flex-direction: column;
+  width: 300px;
+  padding: 0% 7%;
+  margin: 50px 0px;
+}
+#contactBox p {
+  color: white;
+}
+#contactBox a {
+  font-family: "Lato", sans-serif;
+  color: #4dd3ff;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px 0px;
+}
+
+@media only screen and (max-width: 1050px) {
+  h2 {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  nav {
+    display: none;
+  }
+  #logoHome {
+    display: block;
+  }
+  #homeBG {
+    max-width: 1050px;
+  }
+  #kopContainerText {
+    width: 80%;
+    left: 10%;
+    margin-top: 150px;
+    flex-wrap: wrap;
+  }
+  #kopDiensten {
+    width: 80%;
+    left: 10%;
+  }
+  .containerDienst {
+    flex-direction: column;
+  }
+  .dienstTextBox {
+    width: 80%;
+    left: 0%;
+    padding: 7% 7%;
+  }
+  .imgBoxDienst {
+    display: none;
+  }
+  #waaromJuradexKop {
+    width: 80%;
+    left: 10%;
+  }
+  #waaromJuradex h1 {
+    font-size: 20px;
+  }
+  #contactBox {
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #contactText {
+    width: 80%;
+    margin: 50px 0px 20px 0px;
+  }
+  #contactText2 {
+    width: 80%;
+    padding: 0% 7%;
+    margin: 0px 0px 50px 0px;
+  }
+}
